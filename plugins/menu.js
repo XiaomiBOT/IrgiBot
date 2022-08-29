@@ -35,7 +35,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-┏━━〔 *TsukasaMD* 〕━━⬣
+┏━━〔 *XiaomiMD* 〕━━⬣
 ┃⬡ Hai, %name!
 ┃⬡ Tersisa *%limit Limit*
 ┃⬡ Role *%role*
@@ -55,7 +55,7 @@ const defaultMenu = {
   header: '┏━━〔 %category 〕━⬣',
   body: '┃⬡%cmd %islimit %isPremium',
   footer: '┗━━⬣\n',
-  after: `*Made by ♡*
+  after: `*Made by Xiaomi*
 *%npmname* | %version
 ${'```%npmdesc```'}
 `,
@@ -160,7 +160,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://github.com/TsukasaChann', 'Website', '', '', [
+    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://github.com/XiaomiBOT', 'Website', '', '', [
       ['Donate', '/donasi'],
       ['Sewa Bot', '/sewa'],
       ['Owner', '/owner']
@@ -178,7 +178,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Website',
-                                    url: 'https://Ainebot.github.io/'
+                                    url: 'https://github.com/XiaomiBOT'
                                 }
                             }, {
                                 quickReplyButton: {
